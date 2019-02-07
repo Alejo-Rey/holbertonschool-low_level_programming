@@ -8,10 +8,15 @@
 int main(void)
 {
 	int abc;
+	char abcd;
 
 	for (abc = 0; abc < 10; abc++)
 	{
 		putchar(abc % 10 + '0');
+	}
+	for (abcd = 'a'; abcd <= 'g'; abcd++)
+	{
+		putchar(abcd);
 	}
 
 	putchar('\n');
