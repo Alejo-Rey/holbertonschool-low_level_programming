@@ -14,7 +14,7 @@ int main(void)
 	{
 		putchar(abc % 10 + '0');
 	}
-	for (abcd = 'a'; abcd <= 'g'; abcd++)
+	for (abcd = 'a'; abcd < 'g'; abcd++)
 	{
 		putchar(abcd);
 	}
