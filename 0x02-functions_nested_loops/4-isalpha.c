@@ -1,15 +1,20 @@
 #include "holberton.h"
 /**
- * main - Entry point
+ * _isalpha - function to compare the letter
  *
- * Return: Always 0 (Success)
+ * @c : variable to compare the letter
+ *
+ * Description: compare the letters
+ *
+ * Return: Always 0.
  */
 int _isalpha(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
-	} else if (c >= 'A' && c <=  'Z')
+	}
+	else if (c >= 'A' && c <=  'Z')
 	{
 		return (1);
 	} else
