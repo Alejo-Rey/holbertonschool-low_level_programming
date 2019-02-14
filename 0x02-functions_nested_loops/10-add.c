@@ -2,7 +2,8 @@
 /**
  * add - function to compare the letter
  *
- *
+ * @num1: variable a
+ * @num2: variable b
  *
  * Return: Always 0.
  */
