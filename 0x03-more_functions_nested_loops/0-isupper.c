@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- * print_alphabet - print the alphanbet.
+ * _isupper  - compare alphabet.
  *
+ * @c: letter to compare
  * Return: Always 0.
  */
 int _isupper(int c)
