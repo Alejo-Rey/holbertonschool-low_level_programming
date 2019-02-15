@@ -3,20 +3,20 @@
 /**
  * print_square - check the code for Holberton School students.
  *
- * @n: number of the diagonals
+ * @size: number of the square
  * Return: Always 0.
  */
-void print_square(int n)
+void print_square(int size)
 {
 	int count;
 	int count2;
 
-		if (n <= 0)
+		if (size <= 0)
 			_putchar('\n');
 
-		for (count = 0; count < n; count++)
+		for (count = 0; count < size; count++)
 		{
-			for (count2 = 0; count2 < n / 2; count2++)
+			for (count2 = 0; count2 < size / 2; count2++)
 			{
 				_putchar('#');
 				_putchar('#');
