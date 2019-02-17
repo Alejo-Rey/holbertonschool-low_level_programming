@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * print_times_table- function to compare the letter
  *
@@ -20,21 +19,29 @@ void print_times_table(int n)
 				mult = count * count2;
 
 				if (mult / 100 == 0)
-					printf(" ");
-
-				if (mult / 10 == 0)
 				{
-					printf(" ");
+					_putchar(' ');
 				}
 				else
 				{
-					printf("%d", mult / 10);
+					_putchar((mult / 100) + '0');
 				}
-				printf("%d", mult % 10);
+				if (mult / 10 == 0 && mult < 100)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar((mult / 10) % 10 + '0');
+				}
+				_putchar((mult % 10) + '0');
 				if (count2 < n)
-					printf(", ");
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
-			printf("\n");
+			_putchar('\n');
 		}
 	}
 }
