@@ -17,7 +17,14 @@ void print_times_table(int n)
 			for (count2 = 0; count2 <= n; count2++)
 			{
 				mult = count * count2;
-
+				if (count2 == 0)
+				{
+					_putchar('0');
+					_putchar(',');
+					_putchar(' ');
+				}
+				else
+				{
 				if (mult / 100 == 0)
 				{
 					_putchar(' ');
@@ -26,7 +33,7 @@ void print_times_table(int n)
 				{
 					_putchar((mult / 100) + '0');
 				}
-				if (mult / 10 == 0 && mult < 100)
+				if (mult / 10 == 0)
 				{
 					_putchar(' ');
 				}
@@ -39,6 +46,7 @@ void print_times_table(int n)
 				{
 					_putchar(',');
 					_putchar(' ');
+				}
 				}
 			}
 			_putchar('\n');
