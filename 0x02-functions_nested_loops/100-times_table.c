@@ -1,9 +1,7 @@
 #include "holberton.h"
 /**
  * print_times_table- function to compare the letter
- *
  * @n: variable b
- *
  * Return: Always 0.
  */
 void print_times_table(int n)
@@ -22,33 +20,28 @@ void print_times_table(int n)
 					_putchar('0');
 					_putchar(',');
 					_putchar(' ');
-				}
-				else
+				} else
 				{
-				if (mult / 100 == 0)
-				{
-					_putchar(' ');
-				}
-				else
-				{
-					_putchar((mult / 100) + '0');
-				}
-				if (mult / 10 == 0)
-				{
-					_putchar(' ');
-				}
-				else
-				{
-					_putchar((mult / 10) % 10 + '0');
-				}
-				_putchar((mult % 10) + '0');
-				if (count2 < n)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-				}
-			}
+					if (mult / 100 == 0)
+					{
+						_putchar(' ');
+					} else
+					{
+						_putchar((mult / 100) + '0');
+					}
+					if (mult / 10 == 0)
+					{
+						_putchar(' ');
+					} else
+					{
+						_putchar((mult / 10) % 10 + '0');
+					}
+					_putchar((mult % 10) + '0');
+					if (count2 < n)
+					{
+						_putchar(',');
+						_putchar(' ');
+					}}}
 			_putchar('\n');
 		}
 	}
