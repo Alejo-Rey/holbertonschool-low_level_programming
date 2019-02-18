@@ -22,13 +22,7 @@ void print_times_table(int n)
 					_putchar(' ');
 				} else
 				{
-					if (mult / 100 == 0)
-					{
-						_putchar(' ');
-					} else
-					{
-						_putchar((mult / 100) + '0');
-					}
+					(mult / 100 == 0) ? _putchar(' ') : _putchar((mult / 100) + '0');
 					if (mult / 10 == 0)
 					{
 						_putchar(' ');
@@ -44,5 +38,9 @@ void print_times_table(int n)
 					}}}
 			_putchar('\n');
 		}
+	}
+	else
+	{	
+		return;
 	}
 }
