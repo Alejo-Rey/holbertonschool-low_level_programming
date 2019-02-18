@@ -1,12 +1,13 @@
 #include "holberton.h"
 
 /**
- * reset_to_98 - change pointers.
- *
+ * swap_int - change pointers.
+ *@a: value of int
+ *@b: value of int
  * Return: Always 0.
  */
 void swap_int(int *a, int *b)
 {
 	*a = 42;
-	*b = 98;	
+	*b = 98;
 }
