@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * _strlen - change pointers.
  *@s: value to change
@@ -7,8 +6,11 @@
  */
 int _strlen(char *s)
 {
-	char *count;
+	int count;
+	int leng;
 
-	for (; count <= s; count++)
-	       return (count);
+	for (count = 0; count < s[count]; count++)
+		leng++;
+	return (leng);
+
 }
