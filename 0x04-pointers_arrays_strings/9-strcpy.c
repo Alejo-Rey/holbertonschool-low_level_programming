@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
-  * _strcpy - print elements in another array
+  * *_strcpy - print elements in another array
   *
   * @dest: array destine
   * @src: array origin
-  * retunr 0.
+  * Return: dest.
   */
 
 char *_strcpy(char *dest, char *src)
