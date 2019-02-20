@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * swap_int - change pointers.
- *@a: value of int
- *@b: value of int
+ * _puts - change pointers.
+ *@str: value of int
+ *
  * Return: Always 0.
  */
 void _puts(char *str)
