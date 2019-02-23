@@ -3,7 +3,7 @@
 /**
  * _strcmp - compare an array to another.
  * @s1: array 1
- * @s2 array 2.
+ * @s2: array 2.
  * Return: Always 0.
  */
 
