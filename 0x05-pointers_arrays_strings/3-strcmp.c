@@ -9,16 +9,12 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int len_s1, len_s2;
+	int len, dif = 0;
 
-	for (len_s1 = 0; s1[len_s1]; len_s1++)
-	{}
-	for (len_s2 = 0; s2[len_s2]; len_s2++)
-	{}
-	if (len_s1 < len_s2)
-		return (-15);
-	else if (len_s2 < len_s1)
-		return (15);
-	else
-		return (0);
+	for (len = 0; (s1[len] || s2[len]) && dif == 0; len++)
+	{
+		dif = s1[len] - s2[len];
+	}
+
+	return (dif);
 }
