@@ -1,12 +1,16 @@
 #include "holberton.h"
 
 /**
- * cap_string - change the lowcase to the uppercase
- * @str: string to change
+ * infinite_add - change the lowcase to the uppercase
+ * @n1: string to change
+ * @n2: 321654
+ * @r: 654654
+ * @size_r: 987654
+ *
  * Return: str
  */
 
-char *cap_string(char *str)
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int count = 0;
 

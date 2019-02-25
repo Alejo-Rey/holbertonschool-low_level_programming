@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
- * rot13 - change the lowcase to the uppercase
- * @str: string to change
+ * print_number - change the lowcase to the uppercase
+ * @n: string to change
  * Return: str
  */
 
-char *rot13(char *str)
+void print_number(int n)
 {
 	int count = 0;
 
