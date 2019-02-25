@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
- * leet - change the lowcase to the uppercase
+ * cap_string - change the lowcase to the uppercase
  * @str: string to change
  * Return: str
  */
 
-char *leet(char *str)
+char *cap_string(char *str)
 {
 	int count = 0;
 
