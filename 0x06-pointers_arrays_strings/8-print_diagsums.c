@@ -17,7 +17,6 @@ void print_diagsums(int *a, int size)
 		sum1 += *(a + count);
 		count += size;
 	}
-	
 	count2 = (size - 1);
 	for (; count2 < (size * size) - (size - 1); count2++)
 	{
