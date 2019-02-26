@@ -10,15 +10,18 @@
 
 void print_diagsums(int *a, int size)
 {
-	int count, count2;
+	int count, count2, sum1 = 0, sum2 = 0;
 
-	for (count = 0; count < size; count++)
+	for (count = 0; count < (size * size); count++)
 	{
-		for (count2 = 0; count2 < size; count2)
-		{
-			if (count == count2)
-				printf("%d, ", a[count] + a[count2]);
-		}
-		printf("%d", a[count] + (a[count2] - count));
+		sum1 += *(a + count);
+		count += size;
 	}
+	for (count2 = (size - 1); count2 < (size * size); count2++)
+	{
+		sum2 += *(a + count2);
+		count2 += size - 2;
+	}
+	printf("%d, ", sum1);
+	printf("%d\n", sum2);
 }
