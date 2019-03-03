@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 /**
+  * main - print argv
+  * @argc: argument count
+  * @argv: argument vector
   *
-  *
+  * Return: always 0.
   */
 
 int main(int argc, char *argv[])
