@@ -22,5 +22,7 @@ int **alloc_grid(int width, int height)
 			alto[a][b] = 0;
 		}
 	}
+	if (alto == NULL)
+		return (NULL);
 	return (alto);
 }
