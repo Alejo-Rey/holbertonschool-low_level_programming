@@ -1,11 +1,28 @@
 #include "holberton.h"
 
 /**
+ * free_grid - square
+ * @grid: line x
+ * @height: line y
+ * Return: always 0.
+ */
+
+void free_grid(int **grid, int height)
+{
+	int i;
+
+	for (i = 0; i < height; i++)
+		free(grid[i]);
+	free(grid);
+}
+
+/**
  * alloc_grid - square
  * @width: line x
  * @height: line y
  * Return: always 0.
  */
+
 int **alloc_grid(int width, int height)
 {
 	int a = 0, **alto;
@@ -20,9 +37,10 @@ int **alloc_grid(int width, int height)
 		*(alto + a) = malloc(sizeof(int) * width);
 		if (*(alto + a) == NULL)
 		{
-			free(alto[a]);
-			free(alto);
+			free_grid(alto, a);
+			return (NULL);
 		}
 	}
+
 	return (alto);
 }
