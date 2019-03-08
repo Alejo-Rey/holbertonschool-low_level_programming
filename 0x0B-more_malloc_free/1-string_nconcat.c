@@ -1,12 +1,10 @@
 #include "holberton.h"
-#include "stdlib.h"
-#include "stdio.h"
 /**
  * string_nconcat - cancatenate two strings with allocate
  * @s1: string one
  * @s2: string two
  * @n: number of the characters of s2
- * Return: 
+ * Return: always something
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -26,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	for (c = 0; c < a; c++)
-			x[c] = s1[c];
+		x[c] = s1[c];
 	for (d = 0; d < n; d++)
 	{
 		x[c] = s2[d];
