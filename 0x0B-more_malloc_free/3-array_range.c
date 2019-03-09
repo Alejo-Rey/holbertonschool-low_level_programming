@@ -16,12 +16,9 @@ int *array_range(int min, int max)
 	if (x == NULL)
 		return (NULL);
 
-	/*printf("min: %i, max: %i\n", min, max);*/
-	for (a = 0; a < (max - min + 1); a++)
+	for (a = 0; a <= (max - min + 1); a++)
 	{
-		x[a] = min;
-		min++;
+		x[a] = a;
 	}
-	/*printf("min: %i, max: %i\n", min, max);*/
 	return (x);
 }
