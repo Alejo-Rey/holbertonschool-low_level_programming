@@ -1,11 +1,19 @@
 #include "dog.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * new_dog -
- *
- * Return: 
+ * print_dog - function to print a structur 
+ * 
+ * Return: ()
  */
-dog_t *new_dog(char *name, float age, char *owner)
-{
-
+void print_dog(struct dog *d)
+{	
+	if (d == NULL)
+		return;
+	if ((*d).name != NULL && (*d).owner != NULL)
+		printf("Name: %s\nAge: %f\nOwner: %s\n", (*d).name, (*d).age, (*d).owner);
+	else if ((*d).name == NULL && (*d).owner == NULL)
+		printf("(nil)");
+	else if ((*d).name)
+		printf("Name: (nil)");
 }
