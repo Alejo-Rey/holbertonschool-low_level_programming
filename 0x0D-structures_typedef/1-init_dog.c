@@ -1,9 +1,11 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * print_dog -
- *
- * Return: 
+ * init_dog - function to initialize a structurei
+ * @d: the pointer initialize of the struture dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
