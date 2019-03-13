@@ -7,11 +7,11 @@
  * @action: the called function that print
  *
  */
-void array_iterator(int *array, size_t size, void (*action)(int))
+void array_iterator(int *array, int size, void (*action)(int))
 {
 	int x;
 
-	if (action != NULL)
+	if (action != NULL && array != NULL)
 	{
 		for (x = 0; x < size; x++)
 			action(array[x]);
