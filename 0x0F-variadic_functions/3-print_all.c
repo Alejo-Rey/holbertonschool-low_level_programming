@@ -4,7 +4,6 @@
  * print_all - function that prints anything.
  * @format: type of yhe element to print
  *
- * Return: Nan
  */
 void print_all(const char * const format, ...)
 {
@@ -14,7 +13,7 @@ void print_all(const char * const format, ...)
 
 	va_start(all, format);
 
-	while (format[y] && format)
+	while (format[y] != '\0' && format)
 	{
 		switch (format[y])
 		{
@@ -24,6 +23,9 @@ void print_all(const char * const format, ...)
 		case 'i':
 			printf("%i", va_arg(all, int));
 			break;
+		case 'f':
+			printf("%f", va_arg(all, double));
+			break;
 		case 's':
 			p = va_arg(all, char*);
 			if (p == NULL)
@@ -32,9 +34,6 @@ void print_all(const char * const format, ...)
 				break;
 			}
 			printf("%s", p);
-			break;
-		case 'f':
-			printf("%f", va_arg(all, double));
 			break;
 		default:
 			y++;
