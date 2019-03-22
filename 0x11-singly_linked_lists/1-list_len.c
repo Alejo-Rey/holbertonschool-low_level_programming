@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * print_list - function to print teh linked list
- * @h: para,eterto print
+ * list_len - function to see the size of linked list
+ * @h: the string to size
  * Return: the size of the list
  */
 
