@@ -1,16 +1,17 @@
-section .data
-	msg db "Hello, Holberton", 0x0a ;Mensaje
-	len equ $ - msg ;Tamaño del mensaje
-section .text
-	global main ;Necesitamos exportar 'main' a ld, para que lo reconozca
-                                         ;como el punto de entrada del programa.
+extern	printf
+	section .data
+
+fmt:	db "%s", 10, 0
+	section .text
+	global main
+
 main:
-;Escribimos el saludo a stdout.
-	mov eax, 4 ;Número de la llamada al sistema (sys_write).
-	mov ebx, 1 ;Primer argumento: file handle (stdout).
-	mov ecx, msg ;Segundo argumento: puntero a la cadena a escribir.
-	mov edx, len ;Tercer argumento: tamaño de la cadena.
-	int 0x80     ;Llama al Kernel.
-	mov eax, 1  ;Número de la llamada al sistema (sys_exit).
-	xor ebx, ebx ;Argumento de la llamada: código de salida (0: ejecución exitosa).
-	int 0x80 ;Llama al Kernel.
+	push    rbp
+	mov	rdi,fmt
+	mov	rsi,msg
+	mov	rax,0
+	call    printf
+	pop	rbp
+	mov	rax,0
+	ret
+msg:	db "Hello, Holberton", 0
