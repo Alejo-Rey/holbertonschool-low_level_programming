@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- *  - function to see the size of linked list
- * @h: the string to size
- * Return: the size of the list
+ * add_node- function to add a new node in the beginning
+ * @head: the pointer of the head
+ * @str: the data of the new node
+ * Return: the address of the head
  */
 
 list_t *add_node(list_t **head, const char *str)
