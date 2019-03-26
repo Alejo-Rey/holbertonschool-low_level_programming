@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * free_listint -
+ * free_listint - function to free a list
+ * @head: the header of the list to free
  *
- * Return: 
  */
 void free_listint(listint_t *head)
 {
