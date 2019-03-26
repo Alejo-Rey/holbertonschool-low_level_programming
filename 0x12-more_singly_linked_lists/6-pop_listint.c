@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * pop_listint -
- *
- * Return: 
+ * pop_listint - function that free the first node
+ * @head: the head of the list
+ * Return: the head eraser
  */
 int pop_listint(listint_t **head)
 {
