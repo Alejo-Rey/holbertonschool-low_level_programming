@@ -5,9 +5,9 @@
  * @n: the int;
  * Return: x
  */
-unsigned int countbit(unsigned int n)
+unsigned long int countbit(unsigned long int n)
 {
-	unsigned int x = 0;
+	unsigned long int x = 0;
 
 	while (n)
 	{
