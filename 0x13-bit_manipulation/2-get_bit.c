@@ -9,12 +9,12 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int count = 0;
+	unsigned int x = 0, y = 0;
 
-	while (n > index)
-	{
-		count++;
-		n >>= 1;
-	}
-	return (count);
+	if (index > 64)
+		return (-1);
+	y = n >> index;
+	x = y & 1;
+
+	return (x);
 }
