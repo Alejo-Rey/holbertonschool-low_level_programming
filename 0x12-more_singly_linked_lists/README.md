@@ -1,7 +1,7 @@
 # 0x12. C - More singly linked lists
 
 ## Description
-What you should learn from this project:
+Write a simple UNIX command interpreter.
 
 * How to use linked lists
 * Start to look for the right source of information without too much help
