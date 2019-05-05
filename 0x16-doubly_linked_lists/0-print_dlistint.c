@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_dlistint -
+ * print_dlistint - funtion to print a double list
  * @h: the head of the list
  * Return: return the number of the nodes
  */
