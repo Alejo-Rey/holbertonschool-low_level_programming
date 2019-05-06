@@ -1,4 +1,4 @@
-#include "lists.h"
+B#include "lists.h"
 
 /**
  * get_dnodeint_at_index - get a node of specific index
@@ -14,7 +14,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	find = head;
 	if (!find)
 		return (NULL);
-	while(find)
+	while (find)
 	{
 		if (x == index)
 			return (find);
