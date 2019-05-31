@@ -3,7 +3,7 @@
 /**
  * key_index - funtion to give the index of the a key
  * @key: the key
- * @size the size of the array of the hash table
+ * @size: the size of the array of the hash table
  * Return: the index at which the key/value
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
