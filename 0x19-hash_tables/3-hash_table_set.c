@@ -39,6 +39,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	else
 	{
 		temp_2 = ht->array[index];
+		if (strcmp(temp_2->key, key) == 0)
+		{
+			printf("lola\n");
+			add_node(&temp_2, value, key);
+			return (1);
+		}
 		add_node(&temp_2, value, key);
 	}
 	return (1);
