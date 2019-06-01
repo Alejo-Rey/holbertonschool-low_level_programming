@@ -25,7 +25,6 @@ void hash_table_print(const hash_table_t *ht)
 				temp = temp->next;
 				print_listint(temp);
 			}
-			free(temp);
 			y = 1;
 		}
 	}
